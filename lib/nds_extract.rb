@@ -17,9 +17,9 @@ def directors_totals(nds)
 
     while movie_counter < director_movies.length do
       current_movie = director_movies[movie_counter]
-      
+
       director_sum += current_movie[:worldwide_gross]
-      
+
       puts "Director movie count: #{movie_counter}"
       puts "Movie Sum: #{current_movie[:worldwide_gross]}"
       puts "---------------"
