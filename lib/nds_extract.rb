@@ -13,6 +13,7 @@ def directors_totals(nds)
     movie_counter = 0
     director_data = nds[director_counter]
     director_name = director_data[:name]
+    binding.pry
     director_movies = director_data[:movies]
 
     while movie_counter < director_movies.length do
@@ -24,10 +25,5 @@ def directors_totals(nds)
     return_hash[director_name] = director_sum
     director_counter += 1
   end
-
-  # Remember, it's always OK to pretty print what you get *in* to make sure
-  # that you know what you're starting with!
-  #
-  # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   return_hash
 end
