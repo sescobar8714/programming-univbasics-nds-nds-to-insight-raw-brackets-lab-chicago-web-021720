@@ -23,7 +23,6 @@ def directors_totals(nds)
       puts "Movie Sum: #{current_movie[:worldwide_gross]}"
       puts "---------------"
       movie_counter += 1
-      movie_counter = movie_counter + 1
     end
     puts "*********"
     puts "director sum total: #{director_sum}"
