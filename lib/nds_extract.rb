@@ -10,18 +10,18 @@ def directors_totals(nds)
 
   while director_counter < nds.length do
     director_sum = 0
+    binding.pry
     movie_counter = 0
     director_data = nds[director_counter]
     director_name = director_data[:name]
     director_movies = director_data[:movies]
 
     while movie_counter < director_movies.length do
-      binding.pry
       current_movie = director_movies[movie_counter]
-      director_sum = current_movie[:worldwide_gross]
+      director_sum += current_movie[:worldwide_gross]
       movie_counter += 1
     end
-
+    binding.pry
     director_counter += 1
   end
 
