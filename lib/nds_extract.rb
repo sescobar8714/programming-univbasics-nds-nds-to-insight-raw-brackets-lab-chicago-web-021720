@@ -20,10 +20,9 @@ def directors_totals(nds)
       director_sum += current_movie[:worldwide_gross]
       movie_counter += 1
     end
-    puts "*********"
-    puts "director sum total: #{director_sum}"
-    puts "director name: #{director_name}"
-    puts "********"
+  
+    return_hash[director_name] = director_sum
+    puts return_hash
     director_counter += 1
   end
 
