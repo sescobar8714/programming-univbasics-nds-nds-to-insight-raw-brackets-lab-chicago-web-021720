@@ -20,7 +20,7 @@ def directors_totals(nds)
       director_sum += current_movie[:worldwide_gross]
       movie_counter += 1
     end
-  
+
     return_hash[director_name] = director_sum
     director_counter += 1
   end
