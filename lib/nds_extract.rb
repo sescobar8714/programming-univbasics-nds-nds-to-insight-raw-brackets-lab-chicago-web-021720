@@ -22,7 +22,6 @@ def directors_totals(nds)
     end
   
     return_hash[director_name] = director_sum
-    puts return_hash
     director_counter += 1
   end
 
@@ -30,4 +29,5 @@ def directors_totals(nds)
   # that you know what you're starting with!
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
+  return_hash
 end
